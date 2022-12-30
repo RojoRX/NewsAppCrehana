@@ -1,0 +1,17 @@
+#toolbar {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(179, 0, 0, 1) 37%);
+}
+
+li {
+    display: inline-block;
+    margin: 0.5em;
+
+}
+
+button {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(119, 0, 0, 1) 8%);
+}
