@@ -1,19 +1,22 @@
-<mat-toolbar id="toolbar" class="space" color="primary">
-
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-    </button>
-
-    <div id="buttons" class="example-button-row">
-        <ul id="buttons">
-            <li><button mat-raised-button color="warn">Home</button></li>
-            <li><button mat-raised-button color="warn">Plataform</button></li>
-            <li><button mat-raised-button color="warn">Pages</button></li>
-            <li><button mat-raised-button color="warn">Reviews</button></li>
-            <li><button mat-raised-button color="warn">Windows</button></li>
-            <li><button mat-raised-button color="warn">Videos</button></li>
-            <li><button mat-raised-button color="warn">Store</button></li>
-        </ul>
-    </div>
-
+<mat-toolbar class="custom-navbar">
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-button">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    <mat-button mat-raised-button routerLink="/">Inicio</mat-button>
+    <mat-button mat-raised-button routerLink="/">Noticias</mat-button>
+    <mat-button mat-raised-button routerLink="/">Destacado</mat-button>
+    <mat-button mat-raised-button routerLink="/">Varios</mat-button>
+    <mat-button mat-raised-button routerLink="/">Categorias</mat-button>
+    <mat-button mat-raised-button routerLink="/">Busqueda</mat-button>
+    <mat-button mat-raised-button routerLink="/">Acerca de</mat-button>
 </mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">Inicio</button>
+    <button mat-menu-item routerLink="/">Noticias</button>
+    <button mat-menu-item routerLink="/">Destacado</button>
+    <button mat-menu-item routerLink="/">Varios</button>
+    <button mat-menu-item routerLink="/">Categorias</button>
+    <button mat-menu-item routerLink="/">Busqueda</button>
+    <button mat-menu-item routerLink="/">Acerca de</button>
+</mat-menu>

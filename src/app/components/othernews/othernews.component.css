@@ -19,6 +19,21 @@
   
 }
 .activeOne{
-  background-color: cadetblue;
+  background-color: rgb(89, 0, 0);
   color: white;
+}
+
+#style{
+  display: flex;
+  justify-content: center;
+}
+
+#card{
+  text-align: center;
+}
+
+mat-icon{
+  font-size: 40px;
+  margin-left: -1em;
+  height: 50px;
 }

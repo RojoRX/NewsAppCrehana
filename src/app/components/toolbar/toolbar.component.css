@@ -1,17 +1,73 @@
-#toolbar {
-    display: flex;
-    justify-content: center;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(179, 0, 0, 1) 37%);
+.custom-navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
+    background-color: #820000;
+    color: white;
+}
+mat-icon{
+    display: grid;
+    justify-content: start;
 }
 
-li {
-    display: inline-block;
-    margin: 0.5em;
+@media (max-width: 480px) {
+    .custom-navbar mat-button {
+        display: none;
+    }
+    .custom-navbar {
+        justify-items: start;
+    }
 
+    .custom-navbar .menu-button {
+        display: block;
+
+    }
 }
 
-button {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(119, 0, 0, 1) 8%);
+@media (min-width: 481px) and (max-width: 600px) {
+    .custom-navbar mat-button {
+        display: none;
+    }
+    .custom-navbar {
+        justify-items: start;
+    }
+
+    .custom-navbar .menu-button {
+        display: block;
+    }
+    
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+    .custom-navbar {
+        height: max-content;
+    }
+    .custom-navbar mat-button {
+        display: block;
+    }
+
+    .custom-navbar .menu-button {
+        display: none;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+    .custom-navbar mat-button {
+        display: block;
+    }
+
+    .custom-navbar .menu-button {
+        display: none;
+    }
+}
+
+@media (min-width: 1281px) {
+    .custom-navbar mat-button {
+        display: block;
+    }
+
+    .custom-navbar .menu-button {
+        display: none;
+    }
 }
