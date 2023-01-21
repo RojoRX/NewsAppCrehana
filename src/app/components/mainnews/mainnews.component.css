@@ -1,18 +1,55 @@
-.example-card {
-    max-width: 400px;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
-.container{
-    margin: 1em;
-    margin-top: 2em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-
+.backStyle {
+  background-image: radial-gradient(#ed0000 1.5px, transparent 1.5px);
+  background-size: 48px 48px;
+  background-color: #ffffff;
 }
+.example-card {
+  max-width: 400px;
+  margin-top: 2em;
+}
+.example-form-field {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+img{
+  height: 243px;
+}
+.cardTitle{
+  height: 80px;
+}
+        
+.container  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+a.my-button{
+  background-color: #e31e1e;
+  color: #fff;
+  font-family: Trebuchet MS;
+  font-size: 15px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: -4px 2px 13px -2px #2D2D2D;
+ }
+ a.my-button:hover{
+  background-color: #e65656;
+ }
+ a.my-button:active{
+  transform: scale(0.95);
+ }
+ 

@@ -1,21 +1,19 @@
 <div class="buttons">
-  <button mat-raised-button (click)="categorySelector(true)" [ngClass]="stateCat? 'activeOne':''">Basic I</button>
-  <button mat-raised-button (click)="categorySelector(false)" [ngClass]="stateCat? '':'activeOne'">Basic II</button>
+  <button mat-raised-button (click)="categorySelector(true)" [ngClass]="stateCat? 'activeOne':''">Side A</button>
+  <button mat-raised-button (click)="categorySelector(false)" [ngClass]="stateCat? '':'activeOne'">Side B</button>
 </div>
 
 <div class="container" *ngIf="stateCat">
-
   <div id="card" #containerA [hidden]="keyA">
     <mat-card class="example-card">
       <mat-card-header id="style">
-        <mat-icon>favorite</mat-icon>
+        <mat-icon>Home</mat-icon>
       </mat-card-header>
       <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
+        <p>This card can be deleted.</p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button (click)="showCard('A')" >Eliminar div</button>
+        <button mat-button (click)="showCard('A')">Delete</button>
       </mat-card-actions>
     </mat-card>
   </div>
@@ -23,14 +21,14 @@
   <div id="card" #containerA [hidden]="keyB">
     <mat-card class="example-card">
       <mat-card-header id="style">
-        <mat-icon>favorite</mat-icon>
+        <mat-icon>home</mat-icon>
       </mat-card-header>
       <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
+        <p>This card can be deleted.</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>LIKE</button>
-        <button mat-button (click)="showCard('B')" >Eliminar div</button>
+        <button mat-button (click)="showCard('B')">Delete</button>
       </mat-card-actions>
     </mat-card>
   </div>
@@ -41,32 +39,14 @@
         <mat-icon>favorite</mat-icon>
       </mat-card-header>
       <mat-card-content>
-        <p>This card indeterminates progress bar.</p>
+        <p>This card can be deleted.</p>
       </mat-card-content>
       <mat-card-actions>
         <button mat-button>LIKE</button>
-        <button mat-button (click)="showCard('C')" >Eliminar div</button>
+        <button mat-button (click)="showCard('C')">Delete</button>
       </mat-card-actions>
     </mat-card>
   </div>
-
 </div>
 
-
-
-<div class="containerTwo" *ngIf="stateCat==false">
-  <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-      <p>
-        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-        bred for hunting.
-      </p>
-    </mat-card-content>
-  </mat-card>
-
-</div>
+<app-side-b *ngIf="stateCat==false"></app-side-b>

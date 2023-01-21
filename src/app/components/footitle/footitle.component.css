@@ -2,4 +2,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: brown;
+    color: white;
+    margin-top: 1em;
 }

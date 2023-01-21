@@ -18,6 +18,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { PopsUpComponent } from './components/pops-up/pops-up.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule } from '@angular/forms';
+import { MatInputModule} from '@angular/material/input';
+import { SideBComponent } from './components/side-b/side-b.component';
 //import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
@@ -29,7 +31,8 @@ import { FormsModule } from '@angular/forms';
     MaintitleComponent,
     FootitleComponent,
     OthernewsComponent,
-    PopsUpComponent
+    PopsUpComponent,
+    SideBComponent
 
   ],
   imports: [
@@ -42,7 +45,8 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatDialogModule,
     MatMenuModule,
-    FormsModule
+    FormsModule,
+    MatInputModule,
     //   FlexLayoutModule,
   ],
   providers: [],
